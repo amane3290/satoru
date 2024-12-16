@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
+    <!-- jQueryのCDNを追加
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="components/loader.js"></script>
+    <script src="classic.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="./settingend.js"></script>
+    <script src="./mainendb.js"></script>
+    <link rel="stylesheet" href="css/chatB.css">
+    <script>
+        
+    </script>
+</head>
+
+<style>
+  /* スタイルを追加 */
+  #chat-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+  }
+
+  #classes {
+      overflow-y: auto;
+      flex-grow: 1; /* チャット内容部分が画面の上部に広がる */
+      padding: 10px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px; /* ボタンとメッセージ入力の間にスペースを確保 */
+  }
+
+  ul > li:first-child {
+      color: black;
+      font-size: 13px;
+  }
+  ul > li:nth-child(2n) {
+      color: black;
+      font-size: 13px;
+  }
+  ul > li:nth-child(2n):before {
+      font-size: 13px;
+  }
+   ul > li:nth-child(2n+1) {
+      color: black;
+      font-size: 13px;
+  }
+  ul > li:nth-child(2n+1):before {
+      font-size: 13px;
+  }
+</style>
+
+<body>
+     <div class="header">
+     <button class="back-button" onclick="history.back()"><span>戻る</span></button>  
+ </div>
+
+    <div class="box">
+        <p>授業B</p>
+    </div>
+    <div class="input-container">
+    <div id="studentIDDisplay" class="studentID">学籍番号</div>
+    <input id="jsi-name" class="jsi-name" cols="10" rows="1" placeholder="userName"></input>
+
+
+     </div>
+    <div id="chat-container">
+        <!-- チャット内容が動的に生成される部分 -->
+        <ul id="classes"></ul>
+        <!-- メッセージを打ち込む部分 -->
+        <div style="text-align: center;" class="chat">
+        <textarea id="jsi-msg" cols="48" rows="4" placeholder="入力してください"></textarea>
+        </div>
+        <!-- メッセージを送る部分  -->
+        <div class="msr_btn13">
+        <button id="jsi-button" onclick="add_class()">送信</button>
+        <!-- <button  onclick="history.back()"><span>戻る</span></button> -->
+        </div>
+    </div>
+       
+</div>
+
+</body>
+</html>

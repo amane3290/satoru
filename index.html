@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline' 'self'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="classic.js"></script>
+    <link rel="stylesheet" href="./components/loader.css">
+    <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
+    <script src="./settingend.js"></script>
+    <script src="./login.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="Words">
+        <h5 align="center">
+            何かを学ぶのに、自分自身で経験する以上に良い方法はない。
+            <br>
+            <span style="display: inline-block; margin-left: 400px; font-weight: bold;">アインシュタイン</span>
+        </h5>
+        <img src="./css/flower2.png" class="words-image" alt="花" width="20%">
+    </div>
+
+    <br>
+    <div style="text-align: center;">
+        <input id="studentid" placeholder="学籍番号">
+        <input id="loginpassword" placeholder="パスワード">
+    </div>
+
+    <div class="msr_btn13">
+        <button id="loginButton" onclick="login()">ログイン</button>
+    </div>
+    <footer>
+        <h5 class="footer" align="center">
+            Tsuda-CHA
+        </h5>
+    </footer>
+</body>
+</html>

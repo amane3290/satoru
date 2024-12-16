@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <script src="classic.js"></script>
+    <script src="./class.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/class.css">
+</head>
+
+
+<body>
+    
+
+ <div class="header">
+     <button class="back-button" onclick="history.back()"><span>戻る</span></button>  
+    <img class="image" width="60" height="60" src="css/icon1.png" />
+     <div class="studentID">
+            <h5 id="studentIDDisplay" ></h5> <!-- ここに学籍番号が表示される -->
+     </div>
+ </div>
+   
+
+
+ <div class="box">
+    <p>授業C グループを選ぶ</p>
+</div>
+<br>
+<div class="container">
+    <p class="msr_btn13">
+        <button onclick="location.href='./chatC1.html'"><span>グループ1</span></button>
+      <br><br>
+     <button onclick="location.href='./chatC2.html'"><span>グループ2</span></button>
+     <br><br>
+        <button onclick="location.href='./chatC3.html'"><span>グループ3</span></button>
+        </p>
+
+      <!-- この部分に余白を追加 -->
+    <br><br><br><br><br><br><br><br><br>
+     <div class="logout" style="margin-top: 50px;"> <!-- マージンを追加 -->
+    <!-- <a onclick="location.href='./index.html'">ログアウトはこちらから</a> -->
+     </div>
+        </div>
+
+
+    <div class="footer"> <!-- 修正箇所 -->
+       <h5 align="center">
+           Tsuda-CHA
+        </h5>
+    </div>
+</body>
+</html>
